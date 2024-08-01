@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background: #8b98a7;
+}
+input:valid ~ button {
+  visibility: visible;
+}
+
+@media (max-width:360px) {
+  ul p{
+    font-size: 14px;
+    padding: 20px 2px;
+    margin-left: 0px;
+    width: 140px;
+  }
+  ul p.st{
+    margin-right: 10px;
+  }
+  textarea{
+    font-size: 10px;
+  }
+  span.miss{
+    width: 30px;
+    margin-left: -45px;
+    padding-top: 14px;
+  }
+  .arrow{
+    font-size: 20px;
+  }
+}
