@@ -2,14 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body{
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
 body{
-  background: #8b98a7;
+  background: #fff;
 }
 input:valid ~ button {
   visibility: visible;
 }
 
-@media (max-width:360px) {
+/* @media (max-width:360px) {
   ul p{
     font-size: 14px;
     padding: 20px 2px;
@@ -30,4 +35,4 @@ input:valid ~ button {
   .arrow{
     font-size: 20px;
   }
-}
+} */
