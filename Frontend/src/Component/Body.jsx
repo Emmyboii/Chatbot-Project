@@ -29,7 +29,11 @@ const Body = () => {
 
         if (!message) return;
         setIsTyping(true);
-        window.scrollTo(0, 1e10);
+        document.addEventListener('scrolldown', ()=>{
+        window.scrollY(0, 1e10);
+
+        })
+        // window.scrollY(0, 1e10);
 
         setChats(chats => [...chats, {
             role: "user",
@@ -57,7 +61,10 @@ const Body = () => {
             }
             ])
             setIsTyping(false)
-            window.scrollTo(0, 1e10);
+            document.addEventListener('scrolldown', ()=>{
+                window.scrollY(0, 1e10);
+        
+                })
         } catch (error) {
             console.log(error)
         }

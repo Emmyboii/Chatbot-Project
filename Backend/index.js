@@ -21,10 +21,10 @@ app.post("/gemini", async (req, res) => {
     });
 
     const generationConfig = {
-        temperature: 1,
+        temperature: 2,
         topP: 0.95,
         topK: 64,
-        maxOutputTokens: 10000,
+        maxOutputTokens: 100000,
         responseMimeType: "text/plain",
     };
 
